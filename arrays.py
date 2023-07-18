@@ -24,7 +24,7 @@ buy = []
 while True:
     
     print("O que você deseja fazer? ")
-    input_actions = int(input("[1] Inserir | [2] Apagar | [3] Listar "))
+    input_actions = int(input("[1] Inserir | [2] Apagar | [3] Listar | [4] Sair "))
 
     if input_actions == 1:
         insert_item = input("O que você deixa inserir? ")
@@ -59,6 +59,15 @@ while True:
                 print('Item:', b)
         else:
             print("Nenhum item na lista foi encontrado, para fazer a listagem")
+    elif input_actions == 4:
+        break
     else:
         print("Número invalido. Tente novamente")
-        break
+        continue
+
+
+nomes = [ 'Maria', 'Helena', 'Luiz' ]
+
+n1, n2, n3 = nomes # [ 'Maria', 'Helena', 'Luiz' ]
+
+print(*nomes)
